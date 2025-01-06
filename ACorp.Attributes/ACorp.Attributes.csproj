@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>ACorp.ValidationAttributes</PackageId>
+        <Version>2025.01.06</Version>
+        <Title>Assorted useful attributes for validation</Title>
+        <Authors>Daniel, Alex</Authors>
+        <Copyright>Copyright Alex Daniel 2025</Copyright>
+        <RepositoryUrl>git@github.com:alexbdaniel/validation-attributes</RepositoryUrl>
+        <Company>ACorp</Company>
+        
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/alexbdaniel/validation-attributes</PackageProjectUrl>
+        <NuGetAudit>true</NuGetAudit>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))=./</PathMap>
+    </PropertyGroup>
+    
+</Project>
