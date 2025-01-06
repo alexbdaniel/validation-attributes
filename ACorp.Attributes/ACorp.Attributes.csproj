@@ -16,6 +16,10 @@
         <PackageProjectUrl>https://github.com/alexbdaniel/validation-attributes</PackageProjectUrl>
         <NuGetAudit>true</NuGetAudit>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
